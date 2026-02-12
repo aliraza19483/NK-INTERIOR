@@ -1,0 +1,86 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #d4af37;
+  --bg-light: #f8fafc;
+  --text-main: #1e293b;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #64748b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Logo */
+.header-logo {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo-main {
+  color: lightblue;
+  transition: color 0.3s ease;
+}
+
+.logo-main:hover {
+  color: red;
+}
+
+/* Menu */
+.header-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header-menu span {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-menu span:hover {
+  color: var(--primary);
+}
+
+/* Profile icon */
+.header-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header {
+    padding: 12px 16px;
+  }
+
+  .header-logo {
+    font-size: 20px;
+  }
+
+  .header-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
