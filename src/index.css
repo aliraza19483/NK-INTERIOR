@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@
   --text-main: #1e293b;
 }
 
-/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -23,7 +22,6 @@
   font-weight: bold;
 }
 
-/* Logo */
 .header-logo {
   display: flex;
   gap: 10px;
@@ -40,7 +38,6 @@
   color: red;
 }
 
-/* Menu */
 .header-menu {
   display: flex;
   gap: 30px;
@@ -55,8 +52,6 @@
 .header-menu span:hover {
   color: var(--primary);
 }
-
-/* Profile icon */
 .header-icon img {
   width: 50px;
   height: 50px;
@@ -65,7 +60,6 @@
   cursor: pointer;
 }
 
-/* 📱 MOBILE VIEW */
 @media (max-width: 768px) {
   .header-menu {
     display: none;
