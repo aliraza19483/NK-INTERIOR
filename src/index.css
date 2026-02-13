@@ -33,6 +33,11 @@
   font-size: 24px;
   cursor: pointer;
 }
+.header-logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
 
 .logo-main {
   color: lightblue;
@@ -84,7 +89,6 @@
   }
 }
 
-/* Profile dropdown */
 .profile-dropdown {
   position: absolute;
   top: 70px;
@@ -114,7 +118,6 @@
   font-weight: bold;
 }
 
-/* Mobile behavior */
 @media (max-width: 768px) {
   .header-menu {
     display: none;
@@ -205,4 +208,10 @@
 .social-icons a:hover {
   color: var(--primary);
   transform: scale(1.2);
+}
+
+.footer-logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }

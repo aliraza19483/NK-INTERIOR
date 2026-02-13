@@ -4,15 +4,13 @@ function Header() {
   return (
     <div className="header">
       <div className="header-logo">
-        <span className="logo-main">Azhar </span>
-        <span className="logo-sub">Elite</span>
-        <span className="logo-sub">Interior</span>
+        <span className="logo-main">Azhar </span>Elite Interior
       </div>
 
       <div className="header-menu">
         <span className="header-home">Home</span>
         <span className="header-about">About</span>
-        <span className="header-design">Services</span>
+        <span className="header-design">Design-Idea</span>
         <span className="header-contact">Contact</span>
       </div>
 
@@ -24,7 +22,7 @@ function Header() {
           <div className="profile-dropdown">
             <span>Home</span>
             <span>About</span>
-            <span>Services</span>
+            <span>Design-Idea</span>
             <span>Contact</span>
           </div>
         )}
