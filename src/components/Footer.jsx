@@ -8,7 +8,7 @@ function Footer() {
         
         <div className="footer-section">
             <h2 className="footer-logo">
-                <span className="logo-main">Azhar</span> Elite Interior
+                <span className="logo-main">Elite</span> Interior
             </h2>
           <p>Designing timeless spaces with elegance and innovation.</p>
           <br />
