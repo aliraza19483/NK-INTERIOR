@@ -17,7 +17,7 @@ const Form = () => {
 
   const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
-    const message = `Hello NK CONTRACTOR! 
+    const message = `Hello NK INTERIOR! 
 I would like to discuss a project.
 Name: ${formData.name}
 Email: ${formData.email}

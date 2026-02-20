@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
+import logo from "../assets/images/logo.svg";
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -12,7 +14,7 @@ function Header() {
   return (
     <nav className="header">
       <div className="header-logo">
-        <span className="logo-main">NK </span>CONTRACTOR
+        <img src={logo} alt="NK INTERIOR Logo" className="logo-img" />
       </div>
 
       <div className="header-menu">

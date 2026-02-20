@@ -16,7 +16,7 @@ const Founder = () => {
             <div className="img-container">
               <img
                 src={founderImg}
-                alt="NK CONTRACTOR Founder"
+                alt="NK INTERIOR Founder"
                 className="founder-img"
               />
             </div>
@@ -38,7 +38,7 @@ const Founder = () => {
             <h1>Design is the soul of every space.</h1>
             <div className="bio-text">
               <p>
-                NK CONTRACTOR is a full-service provider specializing in False Ceiling, Painting, and Electrical work. We bring expertise and dedication to every project, ensuring your space is both functional and aesthetically pleasing.
+                NK INTERIOR is a full-service provider specializing in False Ceiling, Painting, and Electrical work. We bring expertise and dedication to every project, ensuring your space is both functional and aesthetically pleasing.
               </p>
               <p>
                 "Quality craftsmanship is the foundation of every great home. Whether it's the perfect paint finish, intricate ceiling work, or safe electrical installations, we handle it all with precision and care."

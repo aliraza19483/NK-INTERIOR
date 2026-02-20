@@ -1,3 +1,4 @@
+import logo from "../assets/images/logo.svg";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 
@@ -7,9 +8,9 @@ function Footer() {
     <div className="footer-container">
 
       <div className="footer-section">
-        <h2 className="footer-logo">
-          <span className="logo-main">NK</span> CONTRACTOR
-        </h2>
+        <div className="footer-logo">
+          <img src={logo} alt="NK INTERIOR Logo" className="logo-img-footer" />
+        </div>
         <p>Designing timeless spaces with elegance and innovation.</p>
         <br />
         <h3>Follow Us</h3>
@@ -34,13 +35,13 @@ function Footer() {
         <h3>Visit Our Studio</h3>
         <p>📍Policeline, Madhapur, Hyderabad, Telangana 500081</p>
         <p>📞+91 8953507727</p>
-        <p>✉️ nkcontractor89@gmail.com</p>
+        <p>✉️ nkinterior896@gmail.com</p>
         <br />
 
       </div>
     </div>
     <div className="footer-bottom">
-      <p>© {new Date().getFullYear()} NK CONTRACTOR. All Rights Reserved.</p>
+      <p>© {new Date().getFullYear()} NK INTERIOR. All Rights Reserved.</p>
     </div>
   </footer>)
 
