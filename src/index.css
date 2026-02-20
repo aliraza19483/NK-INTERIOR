@@ -652,7 +652,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 10px 50px;
   background-color: var(--white);
   border-bottom: 2px solid #e2e8f0;
   position: sticky;
@@ -671,7 +671,7 @@ textarea::placeholder {
 }
 
 .logo-img {
-  height: 60px;
+  height: 120px;
   width: auto;
   object-fit: contain;
 }
