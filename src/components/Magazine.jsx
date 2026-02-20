@@ -29,7 +29,7 @@ const articles = [
 
 const Magazine = () => {
   return (
-    <section className="section-padding" style={{ backgroundColor: 'var(--white)' }}>
+    <section className="section-padding" id="design-idea" style={{ backgroundColor: 'var(--white)' }}>
       <div className="container">
         <div className="magazine-header">
           <div style={{ maxWidth: '600px' }}>

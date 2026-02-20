@@ -1,8 +1,37 @@
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    projectType: '',
+    timeline: '',
+    vision: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleWhatsAppSubmit = (e) => {
+    e.preventDefault();
+    const message = `Hello NK CONTRACTOR! 
+I would like to discuss a project.
+Name: ${formData.name}
+Email: ${formData.email}
+Project Type: ${formData.projectType}
+Timeline: ${formData.timeline}
+Vision: ${formData.vision}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/8953507727?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
-    <section className="section-padding form-section-bg">
+    <section className="section-padding form-section-bg" id="contact">
       <div className="container">
         <div className="form-card">
           <div className="form-deco"></div>
@@ -16,18 +45,26 @@ const Form = () => {
               </p>
             </div>
 
-            <form>
+            <form onSubmit={handleWhatsAppSubmit}>
               <div className="form-group-row">
                 <div className="form-input-wrapper">
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Your Full Name"
+                    required
                   />
                 </div>
                 <div className="form-input-wrapper">
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="Email Address"
+                    required
                   />
                 </div>
               </div>
@@ -36,22 +73,34 @@ const Form = () => {
                 <div className="form-input-wrapper">
                   <input
                     type="text"
+                    name="projectType"
+                    value={formData.projectType}
+                    onChange={handleChange}
                     placeholder="Project Type (e.g., Residential)"
+                    required
                   />
                 </div>
                 <div className="form-input-wrapper">
                   <input
                     type="text"
+                    name="timeline"
+                    value={formData.timeline}
+                    onChange={handleChange}
                     placeholder="Preferred Timeline"
+                    required
                   />
                 </div>
               </div>
 
               <div className="form-input-wrapper">
                 <textarea
+                  name="vision"
+                  value={formData.vision}
+                  onChange={handleChange}
                   rows="4"
                   placeholder="Share your vision with us..."
                   style={{ resize: 'none' }}
+                  required
                 ></textarea>
               </div>
 
@@ -62,7 +111,7 @@ const Form = () => {
                   type="submit"
                   className="btn-submit"
                 >
-                  Request Consultation
+                  Request Consultation on WhatsApp
                 </motion.button>
               </div>
             </form>

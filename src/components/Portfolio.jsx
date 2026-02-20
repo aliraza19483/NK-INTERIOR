@@ -5,6 +5,9 @@ import photo3 from '../assets/images/photo 3.jpeg';
 import photo4 from '../assets/images/photo 4.jpeg';
 import photo5 from '../assets/images/Photo 5.jpeg';
 import photo6 from '../assets/images/photo 6.jpeg';
+import video1 from '../assets/Video/Video 1.mp4';
+import video2 from '../assets/Video/Video 2.mp4';
+import video3 from '../assets/Video/Video 3.mp4';
 
 const projects = [
   { id: 1, title: 'Royal Penthouse', category: 'Residential', image: photo1 },
@@ -17,7 +20,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding" id="portfolio">
       <div className="container">
         <div className="text-center" style={{ marginBottom: '64px' }}>
           <h2 className="primary-text uppercase tracking-wide" style={{ fontSize: '0.875rem', fontWeight: 600, marginBottom: '16px' }}>Our Portfolio</h2>
@@ -52,17 +55,48 @@ const Portfolio = () => {
         <div className="recent-project-video" style={{ marginTop: '80px', textAlign: 'center' }}>
           <h2 className="primary-text uppercase tracking-wide" style={{ fontSize: '0.875rem', fontWeight: 600, marginBottom: '24px' }}>Witness Our Craft</h2>
           <h1 className="serif" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'var(--elite)', marginBottom: '40px' }}>Recent Working Project</h1>
-          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000' }}>
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=xb_y1-2-3-4-5"
-              title="Recent Project Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-            ></iframe>
+
+          <div className="video-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))',
+            gap: '32px',
+            marginTop: '40px'
+          }}>
+            {[video1, video2, video3].map((video, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.2 }}
+                style={{
+                  position: 'relative',
+                  paddingBottom: '177.77%', // 9:16 aspect ratio for vertical videos (common for "working project" shots)
+                  height: 0,
+                  overflow: 'hidden',
+                  background: '#000',
+                  boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+                }}
+              >
+                <video
+                  src={video}
+                  className="w-full h-full object-cover absolute top-0 left-0"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

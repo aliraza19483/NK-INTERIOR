@@ -3,7 +3,7 @@ import founderImg from '../assets/images/Client Image.jpeg';
 
 const Founder = () => {
   return (
-    <section className="section-padding" style={{ backgroundColor: 'var(--white)' }}>
+    <section className="section-padding" id="about" style={{ backgroundColor: 'var(--white)' }}>
       <div className="container">
         <div className="founder-grid">
           <motion.div

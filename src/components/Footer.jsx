@@ -22,18 +22,19 @@ function Footer() {
       <div className="footer-section">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#design-idea">Design Idea</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <div className="footer-section">
         <h3>Visit Our Studio</h3>
-        <p>📍Address, Address</p>
-        <p>📞+91 000 000 0000</p>
-        <p>✉️ Example@gmail.com</p>
+        <p>📍Policeline, Madhapur, Hyderabad, Telangana 500081</p>
+        <p>📞+91 8953507727</p>
+        <p>✉️ [EMAIL_ADDRESS]</p>
         <br />
 
       </div>

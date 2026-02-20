@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero-bg" />
 
       <motion.div
