@@ -13,7 +13,7 @@ function Hero() {
       >
         <span className="hero-subtitle">Bespoke Design</span>
         <h1 className="hero-title">
-          ELITE<br />INTERIOR
+          NK<br />CONTRACTOR
         </h1>
         <motion.div
           initial={{ width: 0 }}

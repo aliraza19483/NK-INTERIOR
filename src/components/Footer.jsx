@@ -8,16 +8,14 @@ function Footer() {
 
       <div className="footer-section">
         <h2 className="footer-logo">
-          <span className="logo-main">Elite</span> Interior
+          <span className="logo-main">NK</span> CONTRACTOR
         </h2>
         <p>Designing timeless spaces with elegance and innovation.</p>
         <br />
         <h3>Follow Us</h3>
         <div className="social-icons">
           <a href="/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-          <a href="/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="/" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-          <a href="/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+          <a href="https://www.instagram.com/____azhar_elite_interior" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         </div>
       </div>
 
@@ -41,7 +39,7 @@ function Footer() {
       </div>
     </div>
     <div className="footer-bottom">
-      <p>© {new Date().getFullYear()}Elite Interior. All Rights Reserved.</p>
+      <p>© {new Date().getFullYear()} NK CONTRACTOR. All Rights Reserved.</p>
     </div>
   </footer>)
 

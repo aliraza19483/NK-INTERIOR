@@ -12,7 +12,7 @@ const Form = () => {
               <h2 className="primary-text uppercase tracking-wide" style={{ fontSize: '0.875rem', fontWeight: 600, marginBottom: '16px' }}>Contact Us</h2>
               <h1 className="serif" style={{ fontSize: 'clamp(2.5rem, 5vw, 3rem)', color: 'var(--elite)', marginBottom: '24px' }}>Begin Your Project</h1>
               <p className="serif italic" style={{ color: 'var(--text-muted)', maxWidth: '500px', margin: '0 auto' }}>
-                Join the elite. Let’s collaborate to build a space that reflects your distinct success.
+                Join the exclusive. Let’s collaborate to build a space that reflects your distinct success.
               </p>
             </div>
 

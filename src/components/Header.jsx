@@ -4,18 +4,22 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  function About(){
+  
+
+  }
 
   return (
     <nav className="header">
       <div className="header-logo">
-        <span className="logo-main">Elite </span> Interior
+        <span className="logo-main">NK </span> CONTRACTOR
       </div>
 
       <div className="header-menu">
-        <span className="header-link">Home</span>
-        <span className="header-link">About</span>
-        <span className="header-link">Design-Idea</span>
-        <span className="header-link">Contact</span>
+        <a href="/">Home</a>
+        <a href="/About">About</a>
+        <a href="/design-idea">Design-Idea</a>
+        <a href="/contact">Contact</a>
       </div>
 
       <div className="header-actions">

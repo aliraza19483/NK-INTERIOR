@@ -21,7 +21,7 @@ const Portfolio = () => {
       <div className="container">
         <div className="text-center" style={{ marginBottom: '64px' }}>
           <h2 className="primary-text uppercase tracking-wide" style={{ fontSize: '0.875rem', fontWeight: 600, marginBottom: '16px' }}>Our Portfolio</h2>
-          <h1 className="serif" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', color: 'var(--elite)' }}>Curated Masterpieces</h1>
+          <h1 className="serif" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', color: 'var(--elite)' }}>Recent Projects</h1>
         </div>
 
         <div className="portfolio-grid">
@@ -47,6 +47,23 @@ const Portfolio = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="recent-project-video" style={{ marginTop: '80px', textAlign: 'center' }}>
+          <h2 className="primary-text uppercase tracking-wide" style={{ fontSize: '0.875rem', fontWeight: 600, marginBottom: '24px' }}>Witness Our Craft</h2>
+          <h1 className="serif" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'var(--elite)', marginBottom: '40px' }}>Recent Working Project</h1>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000' }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=xb_y1-2-3-4-5"
+              title="Recent Project Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>

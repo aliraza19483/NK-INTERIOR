@@ -30,7 +30,7 @@ const OfferModal = () => {
               <span className="modal-badge">Exclusive Offer</span>
               <h1 className="serif italic">35% OFF</h1>
               <h2 className="serif">Transform Your Space</h2>
-              <p>Claim your exclusive discount on our premium design services. limited time offer for the elite.</p>
+              <p>Claim your exclusive discount on our premium design services. limited time offer for our exclusive clients.</p>
 
               <form className="modal-form" onSubmit={(e) => { e.preventDefault(); closeModal(); }}>
                 <input type="text" placeholder="Your Name" required />

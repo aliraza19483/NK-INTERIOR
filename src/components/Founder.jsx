@@ -16,13 +16,13 @@ const Founder = () => {
             <div className="img-container">
               <img
                 src={founderImg}
-                alt="Elite Interior Founder"
+                alt="NK CONTRACTOR Founder"
                 className="founder-img"
               />
             </div>
 
             <div className="founder-badge">
-              <span>Elite</span>
+              <span>NK</span>
             </div>
           </motion.div>
 
@@ -38,10 +38,10 @@ const Founder = () => {
             <h1>Design is the soul of every space.</h1>
             <div className="bio-text">
               <p>
-                Founded on the principles of elegance and functionality, Elite Interior brings a bespoke approach to luxury living. Our philosophy centers on creating environments that are not just beautiful, but deeply personal.
+                NK CONTRACTOR is a full-service provider specializing in False Ceiling, Painting, and Electrical work. We bring expertise and dedication to every project, ensuring your space is both functional and aesthetically pleasing.
               </p>
               <p>
-                "I believe that architecture and interiors should speak to the identity of those who inhabit them. Every texture, every light fixture, and every corner is an opportunity to tell a story of sophistication and royalty."
+                "Quality craftsmanship is the foundation of every great home. Whether it's the perfect paint finish, intricate ceiling work, or safe electrical installations, we handle it all with precision and care."
               </p>
             </div>
             <div className="founder-sig">
