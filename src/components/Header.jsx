@@ -22,24 +22,7 @@ function Header() {
         <button onClick={() => { document.getElementById('design-idea').scrollIntoView({ behavior: 'smooth' }) }}>Design-Idea</button>
         <button onClick={() => { document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }}>Contact</button>
       </div>
-
       <div className="header-actions">
-        {/* Profile/Profile Icon */}
-        <div className="header-icon">
-          <img
-            src="src/assets/HeaderIcons/profile.png"
-            alt="profile"
-            onClick={() => setIsProfileOpen(!isProfileOpen)}
-          />
-          {isProfileOpen && (
-            <div className="profile-dropdown">
-              <span>My Dashboard</span>
-              <span>Settings</span>
-              <span className="logout">Logout</span>
-            </div>
-          )}
-        </div>
-
         {/* Mobile Menu Toggle */}
         <button
           className="mobile-menu-toggle"

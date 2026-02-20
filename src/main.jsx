@@ -10,12 +10,10 @@ import Magazine from './components/Magazine.jsx'
 import Form from './components/Form.jsx'
 import SpecialOffer from './components/SpecialOffer.jsx'
 import OfferModal from './components/OfferModal.jsx'
-import FloatingVideo from './components/FloatingVideo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
     <OfferModal />
-    <FloatingVideo />
     <Header />
     <Hero />
     <SpecialOffer />

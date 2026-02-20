@@ -7,7 +7,7 @@ import photo5 from '../assets/images/Photo 5.jpeg';
 import photo6 from '../assets/images/photo 6.jpeg';
 import video1 from '../assets/Video/Video 1.mp4';
 import video2 from '../assets/Video/Video 2.mp4';
-import video3 from '../assets/Video/Video 3.mp4';
+import video3 from '../assets/Video/Video 4.mp4';
 
 const projects = [
   { id: 1, title: 'Royal Penthouse', category: 'Residential', image: photo1 },

@@ -34,7 +34,7 @@ function Footer() {
         <h3>Visit Our Studio</h3>
         <p>📍Policeline, Madhapur, Hyderabad, Telangana 500081</p>
         <p>📞+91 8953507727</p>
-        <p>✉️ [EMAIL_ADDRESS]</p>
+        <p>✉️ nkcontractor89@gmail.com</p>
         <br />
 
       </div>
