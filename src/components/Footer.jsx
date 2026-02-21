@@ -9,7 +9,7 @@ function Footer() {
 
       <div className="footer-section">
         <div className="footer-logo">
-          <img src={logo} alt="NK INTERIOR Logo" className="logo-img-footer" />
+          <img src={logo} className="logo-img-footer" />
         </div>
         <p>Designing timeless spaces with elegance and innovation.</p>
         <br />
