@@ -1,0 +1,16 @@
+<svg width="1000" height="400" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="400" fill="#FFFFFF" />
+  <g transform="translate(80, 60)">
+    <!-- Elegant House Outline -->
+    <path d="M 150 0 L 280 140 L 280 280 L 20 280 L 20 140 Z" fill="none" stroke="#000000" stroke-width="12" stroke-linejoin="round" />
+    <path d="M 100 50 L 100 10 L 140 10 L 140 50" fill="none" stroke="#000000" stroke-width="8" />
+    <rect x="130" y="220" width="40" height="60" fill="none" stroke="#000000" stroke-width="8" />
+    
+    <!-- Branding Text -->
+    <g transform="translate(350, 110)">
+      <text x="0" y="0" fill="#000000" font-family="'Inter', sans-serif" font-weight="800" font-size="110" style="letter-spacing: 2px;">NK</text>
+      <text x="0" y="90" fill="#000000" font-family="'Inter', sans-serif" font-weight="700" font-size="85" style="letter-spacing: 12px;">INTERIOR</text>
+      <text x="0" y="150" fill="#000000" font-family="'Inter', sans-serif" font-weight="500" font-size="28" style="letter-spacing: 6px;">YOUR THOUGHTS OUR DESIGN</text>
+    </g>
+  </g>
+</svg>
