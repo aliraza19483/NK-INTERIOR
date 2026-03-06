@@ -6,7 +6,6 @@ import Hero from './components/Hero.jsx'
 import Founder from './components/Founder.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Process from './components/Process.jsx'
-import Magazine from './components/Magazine.jsx'
 import Form from './components/Form.jsx'
 import SpecialOffer from './components/SpecialOffer.jsx'
 import OfferModal from './components/OfferModal.jsx'
@@ -20,7 +19,6 @@ createRoot(document.getElementById('root')).render(
     <Founder />
     <Portfolio />
     <Process />
-    <Magazine />
     <Form />
     <Footer />
   </>

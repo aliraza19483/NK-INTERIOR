@@ -26,7 +26,7 @@ Timeline: ${formData.timeline}
 Vision: ${formData.vision}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/8953507727?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/+918953507727?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 

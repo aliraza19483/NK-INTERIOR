@@ -45,7 +45,8 @@ const Founder = () => {
               </p>
             </div>
             <div className="founder-sig">
-              — Azhar, Founder & Principal Designer
+              — Azhar, Founder & Principal Designer <br />
+              Contact: 8953507727
             </div>
           </motion.div>
         </div>

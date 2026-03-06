@@ -4,18 +4,15 @@ import photo2 from '../assets/images/photo 2.jpeg';
 import photo3 from '../assets/images/photo 3.jpeg';
 import photo4 from '../assets/images/photo 4.jpeg';
 import photo5 from '../assets/images/Photo 5.jpeg';
-import photo6 from '../assets/images/photo 6.jpeg';
 import video1 from '../assets/Video/Video 1.mp4';
-import video2 from '../assets/Video/Video 2.mp4';
-import video3 from '../assets/Video/Video 4.mp4';
+import video5 from '../assets/Video/Video 2.mp4';
 
 const projects = [
-  { id: 1, title: 'Royal Penthouse', category: 'Residential', image: photo1 },
-  { id: 2, title: 'Bespoke Lounge', category: 'Commercial', image: photo2 },
-  { id: 3, title: 'Minimalist Haven', category: 'Residential', image: photo3 },
-  { id: 4, title: 'Executive Suite', category: 'Office', image: photo4 },
-  { id: 5, title: 'Modern Villa', category: 'Residential', image: photo5 },
-  { id: 6, title: 'The Grand Hall', category: 'Hospitality', image: photo6 },
+  { id: 1, image: photo1 },
+  { id: 2, image: photo2 },
+  { id: 3, image: photo3 },
+  { id: 4, image: photo4 },
+  { id: 5, image: photo5 },
 ];
 
 const Portfolio = () => {
@@ -39,7 +36,6 @@ const Portfolio = () => {
             >
               <img
                 src={project.image}
-                alt={project.title}
                 className="portfolio-img"
               />
               <div className="portfolio-overlay">
@@ -62,7 +58,7 @@ const Portfolio = () => {
             gap: '32px',
             marginTop: '40px'
           }}>
-            {[video1, video2, video3].map((video, idx) => (
+            {[video1, video5].map((video, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -71,25 +67,23 @@ const Portfolio = () => {
                 transition={{ duration: 0.6, delay: idx * 0.2 }}
                 style={{
                   position: 'relative',
-                  paddingBottom: '177.77%', // 9:16 aspect ratio for vertical videos (common for "working project" shots)
-                  height: 0,
+                  width: '100%',
+                  aspectRatio: '9/16', // Proper aspect ratio for fixed vertical video
                   overflow: 'hidden',
                   background: '#000',
+                  borderRadius: '12px',
                   boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
                 }}
               >
                 <video
                   src={video}
-                  className="w-full h-full object-cover absolute top-0 left-0"
+                  className="w-full h-full"
                   controls
                   autoPlay
                   muted
                   loop
                   playsInline
                   style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover'

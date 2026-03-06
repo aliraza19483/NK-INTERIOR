@@ -12,7 +12,7 @@ const SpecialOffer = () => {
         >
           <div className="offer-text">
             <h2 className="primary-text uppercase tracking-wide">Limited Time Privilege</h2>
-            <h1 className="serif">Bespoke Excellence at <span className="highlight">35% OFF</span></h1>
+            <h1 className="serif">Bespoke Excellence at <span className="highlight">20% OFF</span></h1>
             <p>Experience the pinnacle of interior design with a significant investment reduction. Available for our next 5 signature projects.</p>
           </div>
           <div className="offer-action">

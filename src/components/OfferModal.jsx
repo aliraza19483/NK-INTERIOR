@@ -20,13 +20,13 @@ const OfferModal = () => {
 
   const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
-    const message = `Hello! I'd like to claim the 35% Exclusive Offer.
+    const message = `Hello! I'd like to claim the 20% Exclusive Offer.
 Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/8953507727?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/+918953507727?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
     closeModal();
   };
@@ -50,7 +50,7 @@ Phone: ${formData.phone}`;
 
             <div className="modal-content">
               <span className="modal-badge">Exclusive Offer</span>
-              <h1 className="serif italic">35% OFF</h1>
+              <h1 className="serif italic">20% OFF</h1>
               <h2 className="serif">Transform Your Space</h2>
               <p>Claim your exclusive discount on our premium design services. limited time offer for our exclusive clients.</p>
 
